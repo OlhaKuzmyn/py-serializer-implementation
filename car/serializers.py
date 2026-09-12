@@ -31,7 +31,7 @@ class CarSerializer(serializers.Serializer):
             "model", instance.model
         )
         instance.horse_powers = validated_data.get(
-            "horse_powers", instance.horse_power
+            "horse_powers", instance.horse_powers
         )
         instance.is_broken = validated_data.get(
             "is_broken", instance.is_broken
